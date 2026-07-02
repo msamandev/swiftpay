@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SwiftPay — Payments, done Swiftly</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="/">Swift<span>Pay</span></a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navmenu">Menu</button>
+      <ul class="nav-links" id="navmenu">
+        <li><a href="#features">Product</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#docs">Docs</a></li>
+        <li><a class="btn btn-primary" href="#get-started">Get Started</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Payments infrastructure</p>
+        <h1>Payments, done <em>Swiftly</em>.</h1>
+        <p class="lead">Accept, send, and reconcile payments in minutes. One API, one dashboard, zero friction for your team.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#get-started">Start free</a>
+          <a class="btn btn-secondary" href="#demo">Book a demo</a>
+        </div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="SwiftPay dashboard preview showing a payment summary">
+        <div class="mock-bar short"></div>
+        <div class="mock-bar" style="width:70%"></div>
+        <div class="mock-amount">$48,209.00</div>
+        <div class="mock-row"><span>Incoming</span><span>+ $12,400</span></div>
+        <div class="mock-row"><span>Payouts</span><span>- $3,120</span></div>
+        <div class="mock-row"><span>Settled</span><span>98.4%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <h2>Built for speed and trust</h2>
+        <p>Everything decision-makers and teams need to ship payments.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon" aria-hidden="true">⚡</div><h3>Instant onboarding</h3><p>Go live in a day with drop-in components and clear docs — no lengthy integration cycles.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">🔒</div><h3>Secure by default</h3><p>PCI-ready flows, granular access controls, and audit logs built into every transaction.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">📊</div><h3>Real-time insight</h3><p>Track settlements, fees, and payouts live from a single, exportable dashboard.</p></article>
+      </div>
+    </div>
+  </section>
+<!-- PRICING -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <h2>Simple, transparent pricing</h2>
+        <p>Choose a plan that scales with your volume.</p>
+      </div>
+
+      <div style="text-align:center">
+        <div class="billing-toggle" role="group" aria-label="Billing period">
+          <button type="button" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button type="button" data-billing="yearly" aria-pressed="false">Yearly · Save 20%</button>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <article class="plan" aria-label="Starter plan">
+          <h3>Starter</h3>
+          <p class="plan-desc">For small teams testing the waters.</p>
+          <p class="price"><span class="amount" data-monthly="$0" data-yearly="$0">$0</span><span class="period">/mo</span></p>
+          <ul class="feature-list">
+            <li>Up to $10k processed / mo</li>
+            <li>Standard payouts</li>
+            <li>Email support</li>
+            <li class="muted">Custom reporting</li>
+            <li class="muted">Dedicated manager</li>
+          </ul>
+          <a class="btn btn-secondary" href="#signup">Start free</a>
+        </article>
+
+        <!-- Growth (featured) -->
+        <article class="plan is-featured" aria-label="Growth plan, most popular">
+          <span class="badge">Most popular</span>
+          <h3>Growth</h3>
+          <p class="plan-desc">For scaling businesses that need more.</p>
+          <p class="price"><span class="amount" data-monthly="$49" data-yearly="$39">$49</span><span class="period">/mo</span></p>
+          <ul class="feature-list">
+            <li>Up to $250k processed / mo</li>
+            <li>Instant payouts</li>
+            <li>Priority support</li>
+            <li>Custom reporting</li>
+            <li class="muted">Dedicated manager</li>
+          </ul>
+          <a class="btn btn-primary" href="#signup">Choose Growth</a>
+        </article>
+
+        <!-- Enterprise -->
+        <article class="plan" aria-label="Enterprise plan">
+          <h3>Enterprise</h3>
+          <p class="plan-desc">For high-volume, custom requirements.</p>
+          <p class="price"><span class="amount" data-monthly="Custom" data-yearly="Custom">Custom</span></p>
+          <ul class="feature-list">
+            <li>Unlimited volume</li>
+            <li>Instant payouts</li>
+            <li>24/7 phone support</li>
+            <li>Custom reporting</li>
+            <li>Dedicated manager</li>
+          </ul>
+          <a class="btn btn-secondary" href="#contact">Contact sales</a>
+        </article>
+      </div>
+    </div>
+  </section>
+<section class="section" id="signup">
+  <div class="container" style="max-width:560px">
+    <div class="section-head">
+      <h2>Talk to our team</h2>
+      <p>Tell us about your volume and we'll get you set up.</p>
+    </div>
+
+    <form class="signup-form" novalidate>
+      <div class="form-error" role="alert" hidden></div>
+
+      <div class="field">
+        <label for="f-name">Full name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" aria-required="true" />
+        <p class="field-error" id="e-name" hidden></p>
+      </div>
+
+      <div class="field">
+        <label for="f-email">Work email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" aria-required="true" />
+        <p class="field-error" id="e-email" hidden></p>
+      </div>
+
+      <div class="field">
+        <label for="f-message">How can we help?</label>
+        <textarea id="f-message" name="message" rows="4" aria-required="true"></textarea>
+        <p class="field-error" id="e-message" hidden></p>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%">Request access</button>
+    </form>
+
+    <div class="form-success" role="status" hidden>
+      <div class="success-check" aria-hidden="true">✓</div>
+      <h3>Thanks — we got it.</h3>
+      <p>A SwiftPay specialist will reach out within one business day.</p>
+    </div>
+  </div>
+</section>
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <h2>Trusted by teams that ship</h2>
+        <p>What decision-makers say about SwiftPay.</p>
+      </div>
+      <div class="testimonials-grid">
+        <figure class="quote">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote>“We went live in a single afternoon. The docs and drop-in components saved us weeks of work.”</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">MA</span>
+            <span class="who">Maya Adebayo<span>CTO, Ledgerly</span></span>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote>“Reconciliation used to take a full day. Now it's real-time and I trust every number.”</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">JT</span>
+            <span class="who">Jonas Thorne<span>Head of Finance, Brightcart</span></span>
+          </figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote>“Support is fast and the platform just works. SwiftPay is core infrastructure for us now.”</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">RK</span>
+            <span class="who">Rina Kapoor<span>COO, Northwind</span></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="get-started">
+    <div class="container">
+      <div class="cta-strip">
+        <h2>Start accepting payments today</h2>
+        <p>No setup fees. Cancel anytime. Talk to our team about volume pricing.</p>
+        <div class="hero-cta" style="justify-content:center">
+          <a class="btn btn-primary" href="#signup">Create account</a>
+          <a class="btn btn-secondary" href="#pricing">See pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <a class="logo" href="/">Swift<span>Pay</span></a>
+      <p style="color:var(--color-text-secondary);font-weight:400;font-size:var(--font-size-md);margin-top:var(--space-1);max-width:28ch">Fast, reliable payments for modern teams.</p>
+    </div>
+    <div><h4>Product</h4><a href="#features">Features</a><a href="#pricing">Pricing</a></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#contact">Contact</a></div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
