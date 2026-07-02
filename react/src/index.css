@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-surface-base text-text-primary font-sans; font-weight: 600; }
+
+/* Global focus-visible (required) */
+*:focus-visible {
+  outline: 3px solid theme('colors.accent');
+  outline-offset: 2px;
+  border-radius: theme('borderRadius.xs');
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
